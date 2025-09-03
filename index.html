@@ -1,91 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Netflix-Inspired Homepage</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Netflix — Watch TV Shows Online, Watch Movies Online</title>
+  <meta name="description" content="Watch Netflix on smartphone, tablet, Smart TV, laptop, or streaming device for a fixed monthly fee. Plans from ₹149 to ₹649. Watch anywhere, anytime." />
+  <link rel="preconnect" href="https://assets.nflxext.com" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <nav class="navbar">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png" alt="Netflix Logo" class="logo">
-        <button class="signin-btn">Sign In</button>
-    </nav>
-    <section class="hero">
-        <div class="hero-bg">
-            <img src="https://assets.nflxext.com/ffe/siteui/vlv3/699d18bb-9d39-4ae4-aabb-8bde951ddec6/37a2efe6-c45e-4ccc-af41-d7d363a9faeb/IN-en-20240422-popsignuptwoweeks-perspective_alpha_website_medium.jpg">
-        </div>
-        <div class="hero-content">
-            <h1>Unlimited movies, TV shows, and more.</h1>
-            <h2>Watch anywhere. Cancel anytime.</h2>
-            <form class="email-form">
-                <input type="email" placeholder="Email address" required>
-                <button type="submit">Get Started</button>
-            </form>
-        </div>
+  <header class="navbar" role="banner">
+    <div class="nav-left">
+      <img class="logo" src="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.png" alt="Netflix" height="45" width="45" />
+      <span class="brand">Netflix</span>
+    </div>
+    <div class="nav-right">
+      <select class="lang-switch" aria-label="Select language">
+        <option value="en-IN">English</option>
+        <option value="hi-IN">हिन्दी</option>
+      </select>
+      <button class="signin-btn" type="button">Sign In</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-label="Hero">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="hero-content">
+        <h1>Unlimited movies, TV shows, and more</h1>
+        <h2>Watch anywhere. Cancel anytime.</h2>
+        <p>Ready to watch? Enter an email to create or restart membership.</p>
+
+        <form class="email-form" aria-label="Email signup">
+          <label class="sr-only" for="email">Email address</label>
+          <input id="email" name="email" type="email" inputmode="email" autocomplete="email" placeholder="Email address" required />
+          <button type="submit" aria-label="Get Started">Get Started ›</button>
+          <p class="form-help" aria-live="polite"></p>
+        </form>
+      </div>
     </section>
 
-    <section class="devices">
-        <div>
-            <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png" alt="Watch on TV">
-            <h3>Enjoy on your TV.</h3>
-            <p>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
-        </div>
-        <div>
-            <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile.jpg" alt="Download on mobile">
-            <h3>Download your shows to watch offline.</h3>
-            <p>Save your favorites easily and always have something to watch.</p>
-        </div>
-        <div>
-            <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile.png" alt="Devices">
-            <h3>Watch everywhere.</h3>
-            <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
-        </div>
+    <section class="devices" aria-label="Watch on devices">
+      <div>
+        <img src="https://assets.nflxext.com/ffe/siteui/acquisition/home/why-choose-us/tv.png" alt="Smart TV" height="110" width="180" />
+        <h3>Enjoy on TV</h3>
+        <p>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
+      </div>
+      <div>
+        <img src="https://assets.nflxext.com/ffe/siteui/acquisition/home/why-choose-us/mobile-0819.jpg" alt="Mobile downloads" height="110" width="180" />
+        <h3>Download to watch offline</h3>
+        <p>Save favorites easily and always have something to watch.</p>
+      </div>
+      <div>
+        <img src="https://assets.nflxext.com/ffe/siteui/acquisition/home/why-choose-us/device-pile-in.png" alt="Multiple devices" height="110" width="180" />
+        <h3>Watch everywhere</h3>
+        <p>Stream unlimited movies and TV shows on phone, tablet, laptop, and TV.</p>
+      </div>
     </section>
 
-    <section class="content-rows">
-        <h2>Popular on Netflix</h2>
-        <div class="content-carousel">
-            <img src="https://m.media-amazon.com/images/M/MV5BN2FlNjEzZDktNGZjZC00ZGY1LWIyNzktNmMwOTg0NTQ4MTJjXkEyXkFqcGdeQXVyODkzNTgxMDg@._V1_FMjpg_UX1000_.jpg" alt="Stranger Things">
-            <img src="https://m.media-amazon.com/images/M/MV5BMTCompZmItYTk2NS00NDZiLTkxMDctYWIzYmMxZTk0YjM4XkEyXkFqcGdeQXVyMTEwMDg3MjE0._V1_FMjpg_UX1000_.jpg" alt="Wednesday">
-            <img src="https://m.media-amazon.com/images/M/MV5BMjMyZThlNDYtOTQ3MS00NjMzLThiMDAtMGI1NmIyMjBmNDkzXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg" alt="Squid Game">
-            <img src="https://m.media-amazon.com/images/M/MV5BZjE1MWI2ZTgtZTEzOS00ZjExLTk2NmEtOTc1MDg0ZTUxMjJjXkEyXkFqcGdeQXVyMTMzODk3NTE@._V1_FMjpg_UX1000_.jpg" alt="Extraction">
-            <img src="https://m.media-amazon.com/images/M/MV5BMjA2NjI1MjM5N15BMl5BanBnXkFtZTcwODMyODgxNA@@._V1_FMjpg_UX1000_.jpg" alt="Breaking Bad">
-            <!-- Add more images as desired -->
-        </div>
+    <section class="content-rows" aria-label="Popular on Netflix">
+      <h2>Popular on Netflix</h2>
+      <div class="content-carousel" role="list" aria-label="Popular titles">
+        <img role="listitem" src="https://picsum.photos/260/170?random=11" alt="Popular title 1" loading="lazy" />
+        <img role="listitem" src="https://picsum.photos/260/170?random=12" alt="Popular title 2" loading="lazy" />
+        <img role="listitem" src="https://picsum.photos/260/170?random=13" alt="Popular title 3" loading="lazy" />
+        <img role="listitem" src="https://picsum.photos/260/170?random=14" alt="Popular title 4" loading="lazy" />
+        <img role="listitem" src="https://picsum.photos/260/170?random=15" alt="Popular title 5" loading="lazy" />
+      </div>
     </section>
 
-    <section class="faq">
-        <h2>Frequently Asked Questions</h2>
-        <div class="faq-item">
-            <button class="faq-question">What is Netflix?</button>
-            <div class="faq-answer">
-                <p>Netflix is a streaming service offering movies, TV shows, and more across thousands of devices.</p>
-            </div>
-        </div>
-        <div class="faq-item">
-            <button class="faq-question">How much does Netflix cost?</button>
-            <div class="faq-answer">
-                <p>Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device for a fixed monthly fee. Plans range from ₹149 to ₹649 a month.</p>
-            </div>
-        </div>
-        <div class="faq-item">
-            <button class="faq-question">Where can I watch?</button>
-            <div class="faq-answer">
-                <p>Watch anywhere, anytime, on an unlimited number of devices.</p>
-            </div>
-        </div>
+    <section class="content-rows" aria-label="Trending now">
+      <h2>Trending Now</h2>
+      <div class="content-carousel" role="list" aria-label="Trending titles">
+        <img role="listitem" src="https://picsum.photos/260/170?random=21" alt="Trending title 1" loading="lazy" />
+        <img role="listitem" src="https://picsum.photos/260/170?random=22" alt="Trending title 2" loading="lazy" />
+        <img role="listitem" src="https://picsum.photos/260/170?random=23" alt="Trending title 3" loading="lazy" />
+        <img role="listitem" src="https://picsum.photos/260/170?random=24" alt="Trending title 4" loading="lazy" />
+        <img role="listitem" src="https://picsum.photos/260/170?random=25" alt="Trending title 5" loading="lazy" />
+      </div>
     </section>
 
-    <footer>
-        <ul>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Help Center</a></li>
-            <li><a href="#">Terms of Use</a></li>
-            <li><a href="#">Privacy</a></li>
-        </ul>
-        <p>Netflix &copy; 2025 (sample clone)</p>
-    </footer>
-    <script src="script.js"></script>
+    <section class="plans" aria-label="Plans">
+      <h2>Plans for every need</h2>
+      <ul class="plan-grid" role="list">
+        <li role="listitem">
+          <h3>Mobile</h3>
+          <p>From ₹149/month</p>
+        </li>
+        <li role="listitem">
+          <h3>Basic</h3>
+          <p>From ₹199/month</p>
+        </li>
+        <li role="listitem">
+          <h3>Standard</h3>
+          <p>From ₹499/month</p>
+        </li>
+        <li role="listitem">
+          <h3>Premium</h3>
+          <p>From ₹649/month</p>
+        </li>
+      </ul>
+      <p class="plan-note">Watch anywhere, anytime, on supported devices.</p>
+    </section>
+
+    <section class="faq" aria-label="Frequently Asked Questions">
+      <h2>Frequently Asked Questions</h2>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          What is Netflix?
+        </button>
+        <div class="faq-answer" role="region" aria-hidden="true">
+          <p>Netflix is a streaming service offering movies, TV shows, and more across thousands of devices.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          How much does Netflix cost?
+        </button>
+        <div class="faq-answer" role="region" aria-hidden="true">
+          <p>Watch on smartphone, tablet, Smart TV, laptop, or streaming device for a fixed monthly fee. Plans range from ₹149 to ₹649 a month.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Where can I watch?
+        </button>
+        <div class="faq-answer" role="region" aria-hidden="true">
+          <p>Watch anywhere, anytime, on an unlimited number of devices.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Is Netflix good for kids?
+        </button>
+        <div class="faq-answer" role="region" aria-hidden="true">
+          <p>Kids profiles come with PIN-protected parental controls for safer viewing.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <ul>
+      <li><a href="#" aria-label="FAQ link">FAQ</a></li>
+      <li><a href="#" aria-label="Help center link">Help Center</a></li>
+      <li><a href="#" aria-label="Account link">Account</a></li>
+      <li><a href="#" aria-label="Media center link">Media Center</a></li>
+    </ul>
+    <p>Netflix India</p>
+  </footer>
+
+  <script src="script.js" defer></script>
 </body>
 </html>
