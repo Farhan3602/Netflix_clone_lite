@@ -71,13 +71,18 @@
 
     <section class="content-rows" aria-label="Trending now">
       <h2>Trending Now</h2>
-      <div class="content-carousel" role="list" aria-label="Trending titles">
-        <img role="listitem" src="https://picsum.photos/260/170?random=21" alt="Trending title 1" loading="lazy" />
-        <img role="listitem" src="https://picsum.photos/260/170?random=22" alt="Trending title 2" loading="lazy" />
-        <img role="listitem" src="https://picsum.photos/260/170?random=23" alt="Trending title 3" loading="lazy" />
-        <img role="listitem" src="https://picsum.photos/260/170?random=24" alt="Trending title 4" loading="lazy" />
-        <img role="listitem" src="https://picsum.photos/260/170?random=25" alt="Trending title 5" loading="lazy" />
-      </div>
+      <!-- Add inside <main> where you want live charts -->
+<div class="content-rows" id="charts">
+  <section class="row" data-source="tudum" data-region="india" data-type="films" aria-label="Top 10 Movies in India">
+    <h2>Top 10 Movies in India</h2>
+    <div class="content-carousel" role="list"></div>
+  </section>
+  <section class="row" data-source="tudum" data-region="india" data-type="tv" aria-label="Top 10 TV Shows in India">
+    <h2>Top 10 TV Shows in India</h2>
+    <div class="content-carousel" role="list"></div>
+  </section>
+</div>
+
     </section>
 
     <section class="plans" aria-label="Plans">
